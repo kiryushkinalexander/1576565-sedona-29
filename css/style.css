@@ -1,0 +1,214 @@
+:root {
+--basic-black: #000000;
+--basic-blue: #81B3D2; 
+--basic-lightdark: #333333;
+--basic-white: #FFFFFF;
+
+--special: #766357;
+}
+
+
+body {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    background-color: #888888;
+}
+
+.container,
+.main-header,
+.page-footer {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main-nav {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    background: var(--basic-white);
+}
+
+.site-nav {
+    list-style: none;
+}
+
+.site-nav-link {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    text-decoration: none;
+    color: var(--basic-black);
+}
+
+.container h1 {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px; 
+    text-align: center;
+    color: var(--basic-black);
+}
+
+.description {
+ width: 1200px;
+ height: 216px;
+}
+
+.description-about {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.description-reason {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+
+}
+
+.features-list,
+.features-list ul
+{
+    list-style: none;
+}
+
+
+.features-item-white h3 {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+}
+
+.features-item-white span {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+}
+
+.features-item-white p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+}
+
+
+.features-item-black h3 {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.features-item-black span {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--basic-lightdark);
+}
+
+.features-item-black p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--basic-lightdark);
+}
+
+.form h2 {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.form p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.button {
+    width: 458px;
+    height: 58px;
+    background: var(--basic-blue);
+    border: 0px;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--basic-white)
+}
+
+.page-footer a {
+    text-decoration: none;
+    color: var(--basic-black);   
+}
+
+.footer-tag {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px; 
+    text-transform: uppercase;
+}
+
+.footer-phone {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
