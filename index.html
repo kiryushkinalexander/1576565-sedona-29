@@ -3,31 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
 
-    <header class="main-header">
+    <header class="main-header container">
        <!-- Меню -->
       <a class="main-header-logo" href="#"><img src="https://via.placeholder.com/150x100" alt="" width="150px" height="100px"></a>
       <nav class="main-nav">
         <ul class="site-nav">
-          <li class="site-nav-item"><a class="site-nav-link" href="#">информация</a></li>
-          <li class="site-nav-item"><a class="site-nav-link" href="#">фото и видео</a></li>
-          <li class="site-nav-item"><a class="site-nav-link" href="#">карта штата</a></li>
-          <li class="site-nav-item"><a class="site-nav-link" href="/hotels.html">гостиницы</a></li>
+          <li class="site-nav-item">
+            <a class="site-nav-link" href="#">информация</a>
+          </li>
+          <li class="site-nav-item">
+            <a class="site-nav-link" href="#">фото и видео</a>
+          </li>
+          <li class="site-nav-item">
+            <a class="site-nav-link" href="#">карта штата</a>
+          </li>
+          <li class="site-nav-item">
+            <a class="site-nav-link" href="/hotels.html">гостиницы</a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <main class="container">
-
-
+    <main class="main container">
       <h1>Туристический портал города Седона</h1>
-      <section class="container-img">
-        <img src="https://via.placeholder.com/150x100" alt="" width="1200px" height="509px">
+      <section class="banner">
+        <img src="https://via.placeholder.com/1200x509" alt="" width="1200px" height="509px">
         <!-- здесь будет картинка Седоны через стили, эту удалю -->
       </section>
       <section class="description">
@@ -117,29 +123,35 @@
         </p>
         <form class="search-form">
           <!-- дальше будет форма поиска гостиницы -->
-          <button class="button" type="submit">Найти</button>
+          <button class="button button-primary" type="submit">Найти</button>
         </form>
       </section>
       <section class="map">
-        <img src="https://via.placeholder.com/150x100" alt="" width="1199px" height="473px">
+        <img src="https://via.placeholder.com/1199x473" alt="" width="1199px" height="473px">
         <!-- здесь будет карта -->
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <div class="footer-contacts">
         <h2>Как нас найти</h2>
         <p class="footer-tag"><a  href="">#visitSEDONA</a></p>
         <p class="footer-phone">ТЕЛ: <a  href="">+7(495) 666-01-66</a></p>
-                  <!-- здесь будет карты -->
       </div>
 
       <div class="footer-social">
         <h2>Давайте дружить</h2>
-        <ul>
-          <li><a class="twitter" href="">Твиттер</a></li>
-          <li><a class="facebook" href="">Фйесбук</a></li>
-          <li><a class="youtube" href="">Ютуб</a></li>
+        <ul class="social-list">
+          <!-- здесь будут иконки соц.сетей -->
+          <li class="social-item"> 
+            <a class="twitter" href=""></a>
+          </li>
+          <li class="social-item">
+            <a class="facebook" href=""></a>
+          </li>
+          <li class="social-item">
+            <a class="youtube" href=""></a>
+          </li>
         </ul>
       </div>
 
