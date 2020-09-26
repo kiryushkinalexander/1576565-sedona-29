@@ -41,6 +41,11 @@ body {
     color: var(--basic-black);
 }
 
+/* .banner {
+    background-image: url(/img/header-img.jpg);
+    min-height: 509px;
+} */
+
 .description-about {
     font-size: 21px;
     line-height: 26px;
