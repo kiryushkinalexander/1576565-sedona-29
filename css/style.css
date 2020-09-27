@@ -143,3 +143,105 @@ body {
     line-height: 26px;
 }
 
+.footer-copyright {
+    font-weight: normal;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+
+/* HOTELS */
+/* потом могу перенести это выше с list-style */
+.hotels-form-list,
+.sorting,
+.search-result-list,
+.arrows {
+    list-style: none;
+}
+
+.hotels-form-list span {
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase; 
+    color: var(--basic-white);
+}
+
+.hotels-form-item {
+    font-weight: normal;
+    line-height: 21px;
+    text-transform: uppercase;  
+    color: var(--basic-white);
+}
+
+.show-hotels-btn {
+    font-weight: normal;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+}
+
+.filtres span {
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.sorting span {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase; 
+    color: var(--basic-black);
+}
+
+.normal {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-blue)
+}
+
+/* не знаю, как задать длину бордера))) */
+.underlined {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+    opacity: 0.3;
+    border-bottom: 1px dashed var(--basic-blue);
+}
+
+.search-result-item h3 {
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.search-result-item p {
+    font-weight: normal;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--basic-lightdark);
+}
+
+.details {
+    background: var(--basic-blue);
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    border: none;
+    cursor: pointer;
+}
+
+.book {
+    background: var(--special);
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    border: none;
+    cursor: pointer;
+}
