@@ -228,16 +228,24 @@ body {
 }
 
 .page-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
   text-align: center;
   background-color: var(--footer-background);
 }
 
+.footer-social {
+  max-width: 162px;
+  /* padding-left: 525px; */
+  padding-top: 36px;
+}
+
 .social-list {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 6px;
+  column-gap: 6px; */
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
@@ -248,7 +256,15 @@ body {
   width: 48px;
   height: 46px;
   background-color: var(--basic-blue);
+  margin-right: 6px;
 }
+
+.social-item-icon {
+  margin: 0;
+  padding-top: 13px;
+}
+
+
 
 
 
