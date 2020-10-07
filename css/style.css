@@ -46,25 +46,22 @@ body {
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
+/* HEADER */
 
 .main-nav {
   line-height: 26px;
   background-color: var(--basic-white);
-  /* grid-template-columns: 1fr; */
   margin: 0 auto;
   padding: 0 10px;
 }
 
 .main-header-logo {
-    position: relative;
-    left: 50%;
-    margin-left: -69px;
-    margin-bottom: -200px;
-    height: 70px;
-    width: 138px;
-  }
-
-
+  position: relative;
+  left: 531px;
+  margin-bottom: -200px;
+  height: 70px;
+  width: 138px;
+}
 
 .main-header-bar {
   background-color: var(--basic-white);
@@ -77,8 +74,6 @@ body {
   max-width: 134px;
   min-height: 26px;
 }
-
-
 
 .site-nav {
   display: flex;
@@ -97,10 +92,10 @@ body {
   margin: 0;
 }
 
-
+/* MAIN */
 
 .banner {
-  background-image: url(/img/header-img.jpg);
+  background-image: url(../img/header-img.jpg);
   height: 509px;
   background-repeat: no-repeat;
 }
@@ -111,17 +106,28 @@ body {
   padding-top: 78px;
 }
 
+.description {
+  background-image: url(../img/Group\ 1.png);
+  background-repeat: no-repeat;
+  margin-top: -57px;
+}
+
 .description-about {
+  min-height: 80px;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
+  margin: 0;
+  padding-top: 98.5px;
 }
 
 .description-reason {
   font-weight: normal;
   line-height: 26px;
   text-align: center;
-
+  margin: 0;
+  padding-top: 16.5px;
+  padding-bottom: 51px;
 }
 
 .features-list,
@@ -135,18 +141,18 @@ body {
   text-align: center;
   background-color: var(--white);
   list-style: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
-.first {
+.features-image {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-column: 1/4;
   background-color: var(--basic-blue);
 }
 
-.second {
+.features-image-reverse {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-column: 1/4;
@@ -161,15 +167,17 @@ body {
   text-align: center;
   background-color: var(--basic-white);
   list-style: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
-
 
 .features-item-white h3 {
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-white);
+  margin: 0;
+  padding-top: 47px;
+  padding-bottom: 25px;
 }
 
 .features-item-white span {
@@ -179,16 +187,20 @@ body {
 }
 
 .features-item-white p {
+  padding-top: 23px;
   font-weight: normal;
   line-height: 21px;
   color: var(--basic-white);
+  margin: 0;
 }
-
 
 .features-item-black h3 {
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
+  margin: 0;
+  padding-top: 28px;
+  padding-bottom: 25px;
 }
 
 .features-item-black span {
@@ -198,21 +210,59 @@ body {
 }
 
 .features-item-black p {
+  padding-top: 25px;
+  padding-bottom: 82px;
   font-weight: normal;
   line-height: 21px;
   color: var(--basic-lightdark);
+  margin: 0;
+}
+
+.features-item-black-bottom h3 {
+  padding-top: 47px;
+  padding-bottom: 25px;
+}
+
+.features-item-black-bottom p {
+  padding-top: 23px;
+  padding-bottom: 54px;
+}
+
+.house,
+.burger,
+.present {
+  padding-top: 60px;
+}
+
+/* FORM */
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 435px;
+  min-height: 155px;
+  padding-top: 58px;
+  margin: 0 auto;
+}
+
+.form {
+  background-color: var(--basic-white);
+  min-height: 291px;
 }
 
 .form h2 {
   font-size: 30px;
   text-align: center;
   color: var(--basic-black);
+  margin: 0;
 }
 
 .form p {
   font-weight: normal;
   text-align: center;
   color: var(--basic-black);
+  margin: 0;
 }
 
 .button-primary {
@@ -227,6 +277,8 @@ body {
   color: var(--basic-white);
 }
 
+/* FOOTER */
+
 .page-footer {
   display: flex;
   justify-content: space-around;
@@ -236,14 +288,10 @@ body {
 
 .footer-social {
   max-width: 162px;
-  /* padding-left: 525px; */
   padding-top: 36px;
 }
 
 .social-list {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 6px; */
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -264,10 +312,13 @@ body {
   padding-top: 13px;
 }
 
-
-
-
-
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 
 .page-footer a {
   text-decoration: none;
@@ -277,21 +328,38 @@ body {
 .footer-tag {
   font-size: 21px;
   line-height: 26px;
+  margin: 0;
+  padding-top: 23px;
 }
 
 .footer-phone {
   font-size: 21px;
   line-height: 26px;
+  margin: 0;
+  padding-top: 9px;
+  margin-bottom: 36px;
 }
 
 .footer-copyright {
+  display: flex;
+  align-items: center;
   font-weight: normal;
   line-height: 26px;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.footer-copyright p{
+  margin: 0;
+  padding-right: 8px;
 }
 
 
+
+
+
 /* HOTELS */
+
 /* потом могу перенести это выше с list-style */
 .hotels-form-list,
 .sorting,
@@ -320,7 +388,7 @@ body {
 }
 
 .show-hotels {
-  background-image: url(/img/background.jpg);
+  background-image: url(../img/background.jpg);
 }
 
 .price {
@@ -409,6 +477,6 @@ body {
 }
 
 .map {
-  background-image: url(/img/map.jpg);
+  background-image: url(../img/map.jpg);
   min-height: 473px;
 }
