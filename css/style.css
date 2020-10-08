@@ -52,6 +52,7 @@ body {
   margin: 0;
   padding-top: 15px;
   padding-bottom: 15px;
+  padding: 15px 72px 15px 72px;
 }
 
 .main-header {
@@ -62,7 +63,6 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  margin-bottom: -200px;
   height: 70px;
   width: 138px;
 }
@@ -81,6 +81,14 @@ body {
   padding: 0;
   text-align: center;
   background-color: var(--basic-white);
+}
+
+.site-nav-item-left {
+  text-align: left;
+}
+
+.site-nav-item-right {
+  text-align: right;
 }
 
 .site-nav-link {
@@ -106,9 +114,6 @@ body {
 }
 
 .description {
-  /* background-image: url(../img/Group\ 1.png);
-  background-repeat: no-repeat;
-  margin-top: -57px; */
   padding-top: 42px;
   padding-bottom: 51px;
 }
