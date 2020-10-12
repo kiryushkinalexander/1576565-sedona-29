@@ -403,8 +403,8 @@ body {
   list-style: none;
 }
 
-.infrastructure span,
-.hotels-type span,
+.infrastructure legend,
+.hotels-type legend,
 .hotels-price legend {
   font-size: 16px;
   line-height: 21px;
@@ -418,6 +418,9 @@ body {
 
 .show-hotels {
   background-image: url(../img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   padding: 0;
 }
@@ -512,6 +515,13 @@ body {
   text-align: center;
 }
 
+/* CHECKBOX  */
+
+.infrastructure legend,
+.hotels-type legend {
+  margin-bottom: 24px;
+}
+
 .hotels-form-list {
   margin: 0;
   padding: 0;
@@ -524,10 +534,56 @@ body {
   color: var(--basic-white);
   margin: 0;
   padding: 0;
+  margin-bottom: 27px;
+  padding-left: 40px;
+}
+
+.hotels-form-item:last-child {
+  margin: 0;
+}
+
+.hotels-form-item label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.infrastructure,
+.hotels-type {
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
 .infrastructure {
   margin-right: 150px;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-off.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .show-hotels-btn {

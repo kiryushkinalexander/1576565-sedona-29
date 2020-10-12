@@ -38,40 +38,46 @@
     <section class="show-hotels">
       <form class="hotels-form" action="">
         <div class="checkbox-block">
-          <div class="infrastructure">
-            <span>инфраструктура:</span>
+          <fieldset class="infrastructure">
+            <legend>инфраструктура:</legend>
             <ul class="hotels-form-list">
               <li class="hotels-form-item">
-                <input id="pool" type="checkbox" checked>
+                <input class="visually-hidden filter-input-checkbox
+                filter-input" id="pool" type="checkbox" checked>
                 <label for="pool">бассейн</label>
               </li>
               <li class="hotels-form-item">
-                <input id="parking" type="checkbox">
+                <input class="visually-hidden filter-input-checkbox
+                filter-input" id="parking" type="checkbox">
                 <label for="parking">парковка</label>
               </li>
               <li class="hotels-form-item">
-                <input id="wi-fi" type="checkbox">
+                <input class="visually-hidden filter-input-checkbox
+                filter-input" id="wi-fi" type="checkbox">
                 <label for="wi-fi">wi-fi</label>
               </li>
             </ul>
-          </div>
-          <div class="hotels-type">
-            <span>тип жилья:</span>
+          </fieldset>
+          <fieldset class="hotels-type">
+            <legend>тип жилья:</legend>
             <ul class="hotels-form-list">
               <li class="hotels-form-item">
-                <input id="hotel" type="checkbox" checked>
+                <input class="visually-hidden filter-input-checkbox
+                filter-input" id="hotel" type="checkbox" checked>
                 <label for="hotel">гостиница</label>
               </li>
               <li class="hotels-form-item">
-                <input id="motel" type="checkbox" checked>
+                <input class="visually-hidden filter-input-checkbox
+                filter-input" id="motel" type="checkbox" checked>
                 <label for="motel">мотель</label>
               </li>
               <li class="hotels-form-item">
-                <input id="apartaments" type="checkbox" checked>
+                <input class="visually-hidden filter-input-checkbox
+                filter-input" id="apartaments" type="checkbox" checked>
                 <label for="apartaments">апартаменты</label>
               </li>
             </ul>
-          </div>
+          </fieldset>
         </div>
 
         <fieldset class="hotels-price">
