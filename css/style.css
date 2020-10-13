@@ -381,9 +381,11 @@ body {
 /* потом могу перенести это выше с list-style */
 
 .hotels-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: 
+  "checkbox-block hotels-price"
+  "checkbox-block show-hotels-button";
   margin: 0;
   padding: 26px 73px 31px 72px;
 }
@@ -391,6 +393,7 @@ body {
 .checkbox-block {
   display: flex;
   flex-wrap: wrap;
+  grid-area: checkbox-block;
   margin: 0;
   padding: 0;
 }
@@ -426,6 +429,7 @@ body {
 }
 
 .hotels-price {
+  grid-area: hotels-price;
   margin: 0;
   padding: 0;
   border: none;
@@ -445,7 +449,6 @@ body {
 .range-controls .scale {
   height: 2px;
   background-color: var(--basic-white);
-  /* mix-blend-mode: normal; */
   opacity: 0.3;
 }
 
@@ -586,12 +589,27 @@ body {
   background-size: cover;
 }
 
-.show-hotels-btn {
+.show-hotels-button {
+  display: flex;
+  width: 137px;
+  grid-area: show-hotels-button;
+  text-decoration: none;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  margin: 0;
+  padding: 0;
+}
+
+.show-hotels-button a {
   font: inherit;
+  cursor: pointer;
   font-weight: normal;
   line-height: 21px;
   text-transform: uppercase;
   color: var(--basic-white);
+  text-decoration: none;
+  margin: 0;
+  padding: 8px 35px;
 }
 
 .filters-result {
@@ -632,14 +650,44 @@ body {
   border-bottom: 1px dashed var(--basic-blue);
 }
 
+.search-result {
+  margin: 0;
+  padding: 0;
+}
+
+.search-result-list {
+  margin: 0;
+  padding: 0;
+}
+
+.search-result-item {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  border-top: 1px solid black;
+  margin: 0;
+  padding: 30px;
+
+}
+
+.search-result-item img {
+  position: absolute;
+}
+
+
+
 .search-result-item h3 {
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
   color: var(--basic-black);
+  margin: 0;
+  padding: 0;
 }
 
 .search-result-item span {
+  display: block;
+  margin: 0;
+  padding: 0;
   font-weight: normal;
   line-height: 21px;
   text-transform: uppercase;
@@ -663,3 +711,4 @@ body {
   border: none;
   text-decoration: none;
 }
+
