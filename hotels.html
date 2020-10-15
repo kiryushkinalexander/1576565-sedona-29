@@ -35,10 +35,10 @@
   </header>
 
   <main class="main container">
-    <section class="show-hotels">
+    <section class="hotels-filter">
       <form class="hotels-form" action="">
-        <div class="checkbox-block">
-          <fieldset class="infrastructure">
+        <div class="hotels-form-fieldset">
+          <fieldset class="filters-item">
             <legend>инфраструктура:</legend>
             <ul class="hotels-form-list">
               <li class="hotels-form-item">
@@ -58,7 +58,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="hotels-type">
+          <fieldset class="filters-item">
             <legend>тип жилья:</legend>
             <ul class="hotels-form-list">
               <li class="hotels-form-item">
@@ -79,29 +79,30 @@
             </ul>
           </fieldset>
         </div>
-
-        <fieldset class="hotels-price">
-          <legend>стоимость в сутки (Р):</legend>
-          <div class="range-filter">
-            <div class="price-controls">
-              <label class="price-control-min">
-                от <input type="number" name="min-price" value="0">
-              </label>
-              <label class="price-control-max">
-                до <input type="number" name="max-price" value="3000">
-              </label>
-            </div>
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
+        <div class="hotels-fieldset-price">
+          <fieldset class="hotels-price">
+            <legend>стоимость в сутки (Р):</legend>
+            <div class="range-filter">
+              <div class="price-controls">
+                <label class="price-control-min">
+                  от <input type="number" name="min-price" value="0">
+                </label>
+                <label class="price-control-max">
+                  до <input type="number" name="max-price" value="3000">
+                </label>
               </div>
-              <div class="toggle toggle-min"></div>
-              <div class="toggle toggle-max"></div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
             </div>
-          </div>
-        </fieldset>
-        <div class="show-hotels-button">
-          <a href="#">показать</a>
+          </fieldset>
+
+            <button class="show-hotels-button" type="submit">показать</button>
+
         </div>
       </form>
     </section>
@@ -142,7 +143,7 @@
       <div class="search-result">
         <ul class="search-result-list">
           <li class="search-result-item">
-            <img src="img/amara-resort.jpg" alt="Амара ресорт">
+            <img src="img/amara-resort.jpg" width="135" height="90" alt="Амара ресорт">
             <div class="search-result-info">
               <h3>amara resort & spa</h3>
               <span>гостиница</span>
@@ -155,10 +156,10 @@
             </div>
           </li>
           <li class="search-result-item">
-            <div>
-              <img src="img/desert-quail.jpg" alt="Дезерт">
-            </div>
-            <div>
+
+            <img src="img/desert-quail.jpg" width="135" height="90" alt="Дезерт">
+
+            <div class="search-result-info">
               <h3>desert quail inn</h3>
               <span>мотель</span>
               <span>от 3000 р.</span>
@@ -170,10 +171,10 @@
             </div>
           </li>
           <li class="search-result-item">
-            <div>
-              <img src="img/villas.jpg" alt="Вилас">
-            </div>
-            <div>
+
+            <img src="img/villas.jpg" width="135" height="90" alt="Вилас">
+
+            <div class="search-result-info">
               <h3>villas at poco diablo</h3>
               <span>апартаменты</span>
               <span>от 2000 р.</span>
@@ -191,15 +192,14 @@
 
   <footer class="page-footer container">
     <div class="footer-contacts">
-      <h2 class="visually-hidden">Как нас найти</h2>
+      <h2 class="visually-hidden">О нас</h2>
       <p class="footer-tag"><a href="">#visitSEDONA</a></p>
       <p class="footer-phone">ТЕЛ: <a href="">+7(495) 666-01-66</a></p>
     </div>
 
-    <h2 class="visually-hidden">Давайте дружить</h2>
     <ul class="social-list">
       <li class="social-item">
-        <a class="twitter" href="#">
+        <a class="social-link" href="#">
           <svg class="social-item-icon" width="17" height="17" viewBox="0 0 17 17" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -209,7 +209,7 @@
         </a>
       </li>
       <li class="social-item">
-        <a class="facebook" href="#">
+        <a class="social-link" href="#">
           <svg class="social-item-icon" width="12" height="17" viewBox="0 0 12 22" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
@@ -217,7 +217,7 @@
         </a>
       </li>
       <li class="social-item">
-        <a class="youtube" href="#">
+        <a class="social-link" href="#">
           <svg class="social-item-icon" width="20" height="16" viewBox="0 0 20 16" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -242,6 +242,7 @@
 
     </div>
   </footer>
+
 </body>
 
 </html>
