@@ -246,9 +246,7 @@ body {
   margin-bottom: 23px;
 }
 
-.house,
-.burger,
-.present {
+.features-item-icon {
   margin-bottom: 29px;
 }
 
@@ -301,35 +299,50 @@ body {
 /* FOOTER */
 
 .page-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
   text-align: center;
   background-color: var(--footer-background);
   padding-top: 23px;
   padding-bottom: 36px;
 }
 
+.footer-contacts {
+  text-decoration: none;
+}
+
 .social-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  /* flex-direction: row; */
+  align-items: center;
   margin: 0;
   padding: 0;
+
 }
 
 .social-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 46px;
-  height: 48px;
   background-color: var(--basic-blue);
-  margin-left: 6px;
+  margin-right: 6px;
 }
 
-.social-item:nth-last-child(3n) {
-  margin: 0;
+.social-list li:last-child {
+  margin-right: 0px;
+}
+
+.social-link {
+  text-decoration: none;
+  width: 48px;
+  height: 46px;
+}
+
+.social-item-icon {
+  padding-top: 16px;
 }
 
 .visually-hidden {
@@ -344,28 +357,40 @@ body {
   white-space: nowrap;
 }
 
-.page-footer a {
-  text-decoration: none;
-  color: var(--basic-black);
-  width: 48px;
+.footer-tag {
+  margin: 0;
+  margin-bottom: 9px;
 }
 
-.footer-tag {
+.footer-tag a {
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.footer-phone a {
+  text-decoration: none;
   font-size: 21px;
   line-height: 26px;
   margin: 0;
-  margin-bottom: 9px;
+  color: var(--basic-black);
 }
 
 .footer-phone {
   font-size: 21px;
   line-height: 26px;
   margin: 0;
+  color: var(--basic-black);
 }
+
+
 
 .footer-copyright {
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   font-weight: normal;
   line-height: 26px;
   text-transform: uppercase;
@@ -376,6 +401,8 @@ body {
   margin: 0;
   margin-right: 8px;
 }
+
+
 
 /* HOTELS */
 
