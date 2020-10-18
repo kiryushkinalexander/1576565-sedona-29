@@ -335,13 +335,12 @@ body {
 }
 
 .social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   width: 48px;
   height: 46px;
-}
-
-.social-item-icon {
-  padding-top: 16px;
 }
 
 .visually-hidden {
@@ -359,9 +358,6 @@ body {
 .footer-tag {
   margin: 0;
   margin-bottom: 9px;
-}
-
-.footer-tag a {
   text-decoration: none;
   font-size: 21px;
   line-height: 26px;
