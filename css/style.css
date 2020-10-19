@@ -12,6 +12,13 @@
   --banner-background: #6495ED;
   --toggle-background: #ABABAB;
   --border-background: #E5E5E5;
+  --details-hover: #669EC0;
+  --details-active: #5496BD;
+  --book-hover: #604E43;
+  --book-active: #503E33;
+  --opacity-text: rgba(255, 255, 255, 0.3);
+  --search-result-info-color: rgba(0,0,0,0.3);
+  --footer-link-academy: #BDBBBC;
 }
 
 body {
@@ -287,6 +294,15 @@ body {
   text-transform: uppercase;
 }
 
+.button-primary:hover {
+  background-color: var(--book-hover);
+}
+
+.button-primary:active {
+  background-color: var(--book-active);
+  color: var(--opacity-text);
+}
+
 .map {
   background-image: url(../img/map.jpg);
   background-size: cover;
@@ -343,6 +359,16 @@ body {
   height: 46px;
 }
 
+.social-link:hover {
+  background-color: var(--details-hover);
+}
+
+.social-link:active,
+.social-link:active path {
+  background-color: var(--details-active);
+  fill: var(--opacity-text);
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -397,6 +423,14 @@ body {
   margin-right: 8px;
 }
 
+.footer-link-academy:hover path {
+  fill: var(--basic-blue);
+}
+
+.footer-link-academy:active path{
+  fill: var(--footer-link-academy);
+}
+
 
 
 /* HOTELS */
@@ -411,10 +445,8 @@ body {
   padding: 26px 73px 31px 72px;
 }
 
-
 .result {
   background-color: var(--basic-white);
-
 }
 
 .hotels-form-fieldset {
@@ -433,9 +465,8 @@ body {
 }
 
 .hotels-form-list,
-.sorting,
 .search-result-list,
-.arrows,
+.arrows-list,
 .sorting-list {
   list-style: none;
 }
@@ -446,6 +477,81 @@ body {
   line-height: 21px;
   text-transform: uppercase;
   color: var(--basic-white);
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+  margin: 0;
+  padding: 29px 73px 31px 73px;
+}
+
+.sorting {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* .sorting span {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 117px;
+} */
+
+.arrows {
+  margin-left: auto;
+}
+
+.arrows-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.arrows-item {
+  margin-right: 12px;
+}
+
+.arrows-item:last-child {
+  margin-right: 0;
+}
+
+.arrows-item:hover path {
+  fill: var(--basic-black);
+}
+
+.arrows-item:active path {
+  fill: var(--basic-blue);
+
+}
+
+.up-arrow:hover,
+.up-arrow:active,
+.down-arrow:hover,
+.down-arrow:active {
+  transform: rotate(-180deg);
+}
+
+.sorting-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.sorting-item {
+  margin-right: 33px;
+}
+
+.sorting-item:last-child {
+  margin-right: 0;
 }
 
 .hotels-price legend {
@@ -640,6 +746,14 @@ body {
   border-radius: 2px;
   background: transparent;
   margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.show-hotels-button:hover {
+  font: inherit;
+  line-height: 21px;
+  background: var(--basic-white);
+  color: var(--basic-black);
 }
 
 .filters-result {
@@ -647,6 +761,7 @@ body {
   line-height: 26px;
   text-transform: uppercase;
   color: var(--basic-black);
+  margin-right: 46px;
 }
 
 .filters-sort {
@@ -655,6 +770,7 @@ body {
   line-height: 18px;
   text-transform: uppercase;
   color: var(--basic-black);
+  margin-right: 40px;
 }
 
 .sorting-item a {
@@ -669,7 +785,6 @@ body {
   color: var(--basic-blue)
 }
 
-/* не знаю, как задать длину бордера))) */
 .underlined {
   font-weight: normal;
   font-size: 12px;
@@ -688,10 +803,6 @@ body {
 .search-result-list {
   margin: 0;
   padding: 0;
-}
-
-.search-result-info {
-  width: 260px;
 }
 
 .search-result-item {
@@ -721,6 +832,15 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 7px;
+  cursor: pointer;
+}
+
+.search-result-info h3:hover {
+  color: var(--basic-blue);
+}
+
+.search-result-info h3:active {
+  color: var(--search-result-info-color);
 }
 
 .search-result-item span {
@@ -760,6 +880,15 @@ body {
   text-decoration: none;
 }
 
+.details:hover {
+  background: var(--details-hover);
+}
+
+.details:active {
+  background: var(--details-active);
+  color: var(--opacity-text);
+}
+
 .book {
   width: 142px;
   margin: 0;
@@ -771,3 +900,14 @@ body {
   border: none;
   text-decoration: none;
 }
+
+.book:hover {
+  background: var(--book-hover);
+}
+
+.book:active {
+  background: var(--book-active);
+  color: var(--opacity-text);
+}
+
+
