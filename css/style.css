@@ -746,7 +746,7 @@ body {
   margin-right: 0;
 }
 
-.filter-input-checkbox+label::before {
+.filter-input-checkbox+label::after {
   content: "";
   position: absolute;
   top: 0;
