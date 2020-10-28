@@ -135,7 +135,29 @@
         <button class="button button-primary" type="button">поиск гостиницы в седоне</button>
       </div>
       <form class="search-form">
-        
+        <div class="search-form-item">
+        <div class="dates">
+          <label for="start">дата заезда:</label>
+          <input type="date" id="start" name="trip-start" value="2017-04-24">
+          <label for="end">дата выезда:</label>
+          <input type="date" id="end" name="trip-start" value="24 апреля 2017">
+        </div>
+        <div class="visitors">
+          <div class="adults">
+            <label for="adults">взрослые:</label>
+            <span>-</span>
+            <input type="number">
+            <span>+</span>
+          </div>
+          <div class="childrens">
+            <label for="childrens">дети:</label>
+            <span>-</span>
+            <input type="number">
+            <span>+</span>
+          </div>
+        </div>
+      </div>
+      <button class="form-button" type="submit">найти</button>
       </form>
     </section>
     <section class="map"></section>

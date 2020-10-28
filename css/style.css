@@ -19,6 +19,7 @@
   --opacity-text: rgba(255, 255, 255, 0.3);
   --search-result-info-color: rgba(0, 0, 0, 0.3);
   --footer-link-academy: #BDBBBC;
+  --rating-color: #666666;
 }
 
 body {
@@ -315,6 +316,73 @@ body {
   color: var(--basic-black);
   margin: 0;
   margin-bottom: 78px;
+}
+
+.search-form {
+  width: 568px;
+  height: 395px;
+  background-color: var(--basic-white);
+  margin: 0 auto;
+}
+
+.search-form-item {
+  background-color: var(--basic-white);
+  margin: 0;
+  padding: 55px 55px;
+}
+
+.dates {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+}
+
+.dates input {
+  width: 340px;
+  height: 38px;
+  margin-bottom: 30px;
+}
+
+.dates label {
+  display: inline-flex;
+  align-items: center;
+  min-width: 101px;
+  height: 38px;
+  text-align: center;
+  margin-right: 11px;
+  margin-bottom: 30px;
+}
+
+.visitors {
+  display: flex;
+  justify-content: space-between;
+  width: 458px;
+}
+
+.visitors input {
+  width: 36px;
+  height: 26px;
+}
+
+.visitors label {
+  width: 101px;
+  margin-right: 11px;
+}
+
+.form-button {
+  font: inherit;
+  width: 458px;
+  height: 58px;
+  background-color: var(--basic-blue);
+  border: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-white);
+  text-transform: uppercase;
 }
 
 .button-primary {
@@ -925,13 +993,69 @@ body {
 
 .search-result-rating {
   margin-left: auto;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .search-result-rating span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--rating-color); 
   display: inline-block;
   margin: 0;
   padding: 0;
   width: 110px;
+  background-color: var(--basic-lightgrey);
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.four-stars-rating::after {
+  display: block;
+  content: "";
+  width: 90px;
+  height: 17px;
+  margin: 0 auto 47px;
+  margin-right: 0;
+  background-repeat: space repeat;
+  background-position: center bottom;
+}
+
+.four-stars-rating::after {
+  background-image: url(../img/star.svg);
+}
+
+.three-stars-rating::after {
+  display: block;
+  content: "";
+  width: 66px;
+  height: 17px;
+  margin: 0 auto 47px;
+  margin-right: 0;
+  background-repeat: space repeat;
+  background-position: center bottom;
+}
+
+.three-stars-rating::after {
+  background-image: url(../img/star.svg);
+}
+
+.two-stars-rating::after {
+  display: block;
+  content: "";
+  width: 38px;
+  height: 17px;
+  margin: 0 auto 47px;
+  margin-right: 0;
+  background-repeat: space repeat;
+  background-position: center bottom;
+}
+
+.two-stars-rating::after {
+  background-image: url(../img/star.svg);
 }
 
 .details {
