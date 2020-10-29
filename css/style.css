@@ -121,6 +121,7 @@ body {
 .visited:visited {
   color: var(--special);
 }
+
 /* MAIN */
 
 .banner {
@@ -245,7 +246,7 @@ body {
 }
 
 .features-item-black-food h3::before {
- background-image: url(../img/burger.svg);
+  background-image: url(../img/burger.svg);
 }
 
 .features-item-black-present h3::before {
@@ -318,57 +319,123 @@ body {
   margin-bottom: 78px;
 }
 
+.toggle-form {
+  position: relative;
+}
+
 .search-form {
-  width: 568px;
-  height: 395px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: var(--basic-white);
-  margin: 0 auto;
+  padding: 52px;
 }
 
-.search-form-item {
-  background-color: var(--basic-white);
-  margin: 0;
-  padding: 55px 55px;
-}
-
-.dates {
+.form-field {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   margin: 0;
 }
 
-.dates input {
+.form-field-button {
+  position: absolute;
+  width: 21px;
+  height: 23px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-image: url(../img/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 85%;
+  transform: translateY(-75%);
+  cursor: pointer;
+}
+
+.form-field input {
+  display: inline-flex;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  border: none;
+  background-color: var(--basic-lightgrey);
+  text-transform: uppercase;
   width: 340px;
   height: 38px;
   margin-bottom: 30px;
+  padding: 0;
+  padding-left: 13px;
 }
 
-.dates label {
+.form-field label {
   display: inline-flex;
   align-items: center;
   min-width: 101px;
   height: 38px;
-  text-align: center;
   margin-right: 11px;
   margin-bottom: 30px;
 }
 
-.visitors {
+.form-field-row {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  width: 458px;
+  margin-bottom: 54px;
 }
 
-.visitors input {
-  width: 36px;
-  height: 26px;
+.form-field-row input {
+  text-align: center;
+  width: 114px;
+  height: 38px;
+  padding: 0;
+  margin: 0;
 }
 
-.visitors label {
-  width: 101px;
-  margin-right: 11px;
+.form-field-row label {
+  margin: 0;
+  padding: 0;
+}
+
+.form-field-button-minus {
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-image: url(../img/minus.svg);
+  cursor: pointer;
+}
+
+.form-field-button-plus {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-image: url(../img/plus.svg);
+  cursor: pointer;
+}
+
+.minus-primary {
+  left: 31%;
+}
+
+.minus-secondary {
+  left: 73%;
+}
+
+.plus-primary {
+  left: 44%;
+}
+
+.plus-secondary {
+  left: 86%;
 }
 
 .form-button {
@@ -1002,7 +1069,7 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  color: var(--rating-color); 
+  color: var(--rating-color);
   display: inline-block;
   margin: 0;
   padding: 0;
