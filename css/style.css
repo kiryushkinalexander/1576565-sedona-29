@@ -324,19 +324,23 @@ body {
 }
 
 .search-form {
+  text-align: left;
   position: absolute;
   left: 50%;
+  top: 100%;
   transform: translateX(-50%);
   background-color: var(--basic-white);
-  padding: 52px;
+  padding: 55px;
 }
 
 .form-field {
+  position: relative;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
+  margin-bottom: 30px;
 }
 
 .form-field-button {
@@ -346,15 +350,20 @@ body {
   border: none;
   padding: 0;
   margin: 0;
+  background-color: transparent;
   background-image: url(../img/calendar.svg);
   background-repeat: no-repeat;
   background-position: center;
-  left: 85%;
-  transform: translateY(-75%);
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
   cursor: pointer;
 }
 
 .form-field input {
+  font: inherit;
+  box-sizing: border-box;
+  flex-grow: 1;
   display: inline-flex;
   font-style: normal;
   font-weight: bold;
@@ -363,11 +372,17 @@ body {
   border: none;
   background-color: var(--basic-lightgrey);
   text-transform: uppercase;
-  width: 340px;
-  height: 38px;
-  margin-bottom: 30px;
-  padding: 0;
-  padding-left: 13px;
+  padding: 6px 174px 6px 13px;
+}
+
+.form-field input::placeholder {
+  font: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  border: none;
+  color: var(--basic-black);
 }
 
 .form-field label {
@@ -376,71 +391,101 @@ body {
   min-width: 101px;
   height: 38px;
   margin-right: 11px;
-  margin-bottom: 30px;
 }
 
 .form-field-row {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 54px;
 }
 
+.form-field-row p {
+  margin: 0;
+}
+
 .form-field-row input {
+  font: inherit;
+  flex-grow: unset;
+  box-sizing: border-box;
   text-align: center;
   width: 114px;
-  height: 38px;
-  padding: 0;
+  padding: 6px 38px;
   margin: 0;
+  margin-left: 6px;
 }
 
 .form-field-row label {
+  font: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
   margin: 0;
   padding: 0;
+}
+
+.form-field-row-label {
+  position: relative;
 }
 
 .form-field-button-minus {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
   position: absolute;
-  width: 12px;
-  height: 3px;
+  top: 50%;
+  transform: translateY(-50%);
   border: none;
+  width: 11px;
+  height: 11px;
   padding: 0;
   margin: 0;
-  background-image: url(../img/minus.svg);
   cursor: pointer;
 }
 
+.form-field-label {
+  margin-left: auto;
+}
+
+.form-field-label label {
+  min-width: 68px;
+}
+
+.form-field-label input {
+  margin: 0;
+}
+
 .form-field-button-plus {
+  background-color: transparent;
   position: absolute;
-  width: 11px;
-  height: 11px;
+  top: 50%;
+  transform: translateY(-50%);
   border: none;
   padding: 0;
   margin: 0;
-  background-image: url(../img/plus.svg);
   cursor: pointer;
 }
 
 .minus-primary {
-  left: 31%;
+  right: 85px;
 }
 
 .minus-secondary {
-  left: 73%;
+  right: 85px;
 }
 
 .plus-primary {
-  left: 44%;
+  right: 15px;
 }
 
 .plus-secondary {
-  left: 86%;
+  right: 15px;
 }
 
 .form-button {
   font: inherit;
-  width: 458px;
+  width: 100%;
   height: 58px;
   background-color: var(--basic-blue);
   border: none;
