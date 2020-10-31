@@ -20,6 +20,7 @@
   --search-result-info-color: rgba(0, 0, 0, 0.3);
   --footer-link-academy: #BDBBBC;
   --rating-color: #666666;
+  --form-field-background: #EBEBEB;
 }
 
 body {
@@ -360,6 +361,18 @@ body {
   cursor: pointer;
 }
 
+.form-field-button:hover path,
+.form-field-button-plus:hover path,
+.form-field-button-minus:hover rect {
+  fill: var(--basic-black);
+}
+
+.form-field-button:active path,
+.form-field-button-plus:active path,
+.form-field-button-minus:active rect {
+  fill: var(--basic-blue);
+}
+
 .form-field input {
   font: inherit;
   box-sizing: border-box;
@@ -383,6 +396,16 @@ body {
   line-height: 26px;
   border: none;
   color: var(--basic-black);
+}
+
+.form-field input:hover {
+  background-color: var(--form-field-background);
+}
+
+.form-field input:focus {
+  background-color: var(--basic-white);
+  border: 2px solid var(--border-background);
+  margin: -2px;
 }
 
 .form-field label {
@@ -413,6 +436,12 @@ body {
   padding: 6px 38px;
   margin: 0;
   margin-left: 6px;
+}
+
+.form-field-row input:focus {
+  background-color: var(--basic-white);
+  border: 2px solid var(--border-background);
+  margin: -2px;
 }
 
 .form-field-row label {
@@ -495,6 +524,16 @@ body {
   line-height: 26px;
   color: var(--basic-white);
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background: var(--details-hover);
+}
+
+.form-button:active {
+  background-color: var(--details-active);
+  color: var(--opacity-text);
 }
 
 .button-primary {
@@ -1061,7 +1100,7 @@ body {
 }
 
 .search-result-info {
-  width: 270px;
+  max-width: 550px;
 }
 
 .search-result-item h3 {
