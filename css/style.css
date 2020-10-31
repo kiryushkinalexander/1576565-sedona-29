@@ -16,11 +16,13 @@
   --details-active: #5496BD;
   --book-hover: #604E43;
   --book-active: #503E33;
+  --toggle-shadow: rgba(171, 171, 171, 0.3);
   --opacity-text: rgba(255, 255, 255, 0.3);
   --search-result-info-color: rgba(0, 0, 0, 0.3);
   --footer-link-academy: #BDBBBC;
   --rating-color: #666666;
   --form-field-background: #EBEBEB;
+  --form-border-background: 2px solid #E5E5E5;
 }
 
 body {
@@ -119,7 +121,7 @@ body {
   color: var(--search-result-info-color);
 }
 
-.visited:active {
+.active-link {
   color: var(--special);
 }
 
@@ -359,6 +361,7 @@ body {
   right: 15px;
   transform: translateY(-50%);
   cursor: pointer;
+  outline: none;
 }
 
 .form-field-button:hover path,
@@ -373,6 +376,12 @@ body {
   fill: var(--basic-blue);
 }
 
+.form-field-button:focus path,
+.form-field-button-plus:focus path,
+.form-field-button-minus:focus rect {
+  fill: var(--basic-blue);
+}
+
 .form-field input {
   font: inherit;
   box-sizing: border-box;
@@ -382,10 +391,11 @@ body {
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  border: none;
   background-color: var(--basic-lightgrey);
   text-transform: uppercase;
   padding: 6px 174px 6px 13px;
+  border: 2px solid var(--basic-lightgrey);
+  outline: none;
 }
 
 .form-field input::placeholder {
@@ -400,12 +410,12 @@ body {
 
 .form-field input:hover {
   background-color: var(--form-field-background);
+  outline: none;
+  border: 2px solid var(--form-field-background);
 }
 
 .form-field input:focus {
   background-color: var(--basic-white);
-  border: 2px solid var(--border-background);
-  margin: -2px;
 }
 
 .form-field label {
@@ -428,20 +438,26 @@ body {
 }
 
 .form-field-row input {
-  font: inherit;
   flex-grow: unset;
   box-sizing: border-box;
   text-align: center;
   width: 114px;
   padding: 6px 38px;
   margin: 0;
-  margin-left: 6px;
+}
+
+.form-field-row input::placeholder {
+  font: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  border: none;
+  color: var(--basic-black);
 }
 
 .form-field-row input:focus {
   background-color: var(--basic-white);
-  border: 2px solid var(--border-background);
-  margin: -2px;
 }
 
 .form-field-row label {
@@ -451,6 +467,7 @@ body {
   font-size: 14px;
   line-height: 26px;
   margin: 0;
+  margin-right: 7px;
   padding: 0;
 }
 
@@ -471,6 +488,7 @@ body {
   padding: 0;
   margin: 0;
   cursor: pointer;
+  outline: none;
 }
 
 .form-field-label {
@@ -494,6 +512,7 @@ body {
   padding: 0;
   margin: 0;
   cursor: pointer;
+  outline: none;
 }
 
 .minus-primary {
@@ -868,8 +887,7 @@ body {
 
 .range-controls .scale {
   height: 2px;
-  background-color: var(--basic-white);
-  opacity: 0.3;
+  background-color: var(--opacity-text);
 }
 
 .range-controls .bar {
@@ -881,17 +899,23 @@ body {
 .range-controls .toggle {
   position: absolute;
   top: 10px;
-  width: 5px;
-  height: 5px;
+  width: 19px;
+  height: 19px;
   padding: 0;
   border: 8px solid var(--basic-white);
   background-color: var(--toggle-background);
+  box-shadow: 0 2px var(--toggle-shadow);
   border-radius: 50%;
   cursor: pointer;
 }
 
+.toggle-max:hover,
+.toggle-min:hover {
+  transform: scale(1.2);
+}
+
 .range-controls .toggle-max {
-  left: 160px;
+  left: 210px;
 }
 
 .price-controls {
@@ -1009,6 +1033,33 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+.filter-input-checkbox:disabled+label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-disabled.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.filter-input-checkbox:disabled:checked+label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox-on-disabled.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 
 .show-hotels-button {
   margin: 0;
