@@ -6,6 +6,7 @@
   --basic-grey: #888888;
   --basic-lightgrey: #F2F2F2;
 
+  --container-boxshadow: rgba(0, 1, 1, 0.2);
   --footer-background: rgba(255, 255, 255, 0.9);
   --special: #766357;
   --special-grey: #EEEEEE;
@@ -23,19 +24,7 @@
   --rating-color: #666666;
   --form-field-background: #EBEBEB;
   --form-border-background: 2px solid #E5E5E5;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  color: var(--basic-black);
-  text-transform: uppercase;
-  background-color: var(--basic-lightgrey);
+  --form-disabled-label: #6A6A6A;
 }
 
 /* Grid */
@@ -50,11 +39,27 @@ body {
 
 .container {
   width: 1200px;
+  /* height: 100vh; */
+  background-color: var(--basic-white);
   margin: 0 auto;
-  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  box-shadow: 0 5px 15px var(--container-boxshadow);
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-lightgrey);
+}
+
+.hotels-container {
+  height: 100vh;
+  background-color: var(--basic-white);
 }
 
 /* HEADER */
@@ -160,7 +165,7 @@ body {
 
 .features-item-inner {
   margin: 0;
-  padding: 47px 51px 54px 52px;
+  padding: 50px 49px 51px 50px;
 }
 
 .features-list,
@@ -391,6 +396,7 @@ body {
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
+  color: var(--basic-black);
   background-color: var(--basic-lightgrey);
   text-transform: uppercase;
   padding: 6px 174px 6px 13px;
@@ -404,6 +410,7 @@ body {
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
+  text-transform: uppercase;
   border: none;
   color: var(--basic-black);
 }
@@ -439,6 +446,12 @@ body {
 
 .form-field-row input {
   flex-grow: unset;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  text-transform: uppercase;
   box-sizing: border-box;
   text-align: center;
   width: 114px;
@@ -448,6 +461,7 @@ body {
 
 .form-field-row input::placeholder {
   font: inherit;
+  text-transform: uppercase;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -462,6 +476,7 @@ body {
 
 .form-field-row label {
   font: inherit;
+  text-transform: uppercase;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -615,7 +630,6 @@ body {
   align-items: center;
   margin: 0;
   padding: 0;
-
 }
 
 .social-item {
@@ -685,8 +699,6 @@ body {
   color: var(--basic-black);
 }
 
-
-
 .footer-copyright {
   display: flex;
   align-items: center;
@@ -711,11 +723,7 @@ body {
   fill: var(--footer-link-academy);
 }
 
-
-
 /* HOTELS */
-
-/* потом могу перенести это выше с list-style */
 
 .hotels-form {
   display: flex;
@@ -953,7 +961,6 @@ body {
   outline: none;
 }
 
-
 .price-control-min {
   text-align: right;
 }
@@ -1060,6 +1067,9 @@ body {
   background-size: cover;
 }
 
+.filter-input-checkbox:focus+label::after {
+  outline: 1px solid var(--basic-blue);
+}
 
 .show-hotels-button {
   margin: 0;
@@ -1154,7 +1164,9 @@ body {
   max-width: 550px;
 }
 
-.search-result-item h3 {
+.search-result-item-link {
+  display: inline-block;
+  text-decoration: none;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
@@ -1165,11 +1177,11 @@ body {
   cursor: pointer;
 }
 
-.search-result-info h3:hover {
+.search-result-item-link:hover {
   color: var(--basic-blue);
 }
 
-.search-result-info h3:active {
+.search-result-item-link:active {
   color: var(--search-result-info-color);
 }
 
