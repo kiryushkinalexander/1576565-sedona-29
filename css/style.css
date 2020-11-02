@@ -332,6 +332,8 @@
 }
 
 .search-form {
+  display: none;
+  box-sizing: border-box;
   text-align: left;
   position: absolute;
   left: 50%;
@@ -339,6 +341,22 @@
   transform: translateX(-50%);
   background-color: var(--basic-white);
   padding: 55px;
+}
+
+.show-form {
+  display: block;
+  animation-name: left-to-center;
+  animation-duration:  2s;
+}
+
+@keyframes left-to-center {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 50%;
+  }
 }
 
 .form-field {
