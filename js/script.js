@@ -3,6 +3,7 @@ const form = document.querySelector(".search-form");
 const tripStart = form.querySelector('.trip-start');
 const tripEnd = form.querySelector('.trip-end');
 
+form.classList.add('hide-form');
 
 button.addEventListener ("click", (event) => {
     event.preventDefault();
