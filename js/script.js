@@ -3,6 +3,15 @@ const form = document.querySelector(".search-form");
 const tripStart = form.querySelector('.trip-start');
 const tripEnd = form.querySelector('.trip-end');
 
+let isStorageSupport = true;
+let storage = "";
+
+try {
+  storage = localStorage.getItem("login");
+} catch (err) {
+  isStorageSupport = false;
+}
+
 form.classList.add('hide-form');
 
 button.addEventListener ("click", (event) => {

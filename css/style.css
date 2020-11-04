@@ -1228,12 +1228,13 @@
   flex-wrap: wrap;
   border-top: 1px solid var(--border-background);
   margin: 0;
-  padding: 30px 72px;
+  padding: 23px 73px 30px 73px;
 }
 
 .search-result-item img {
   margin: 0;
   padding: 0;
+  padding-top: 7px;
   margin-right: 29px;
 }
 
@@ -1249,6 +1250,7 @@
   text-transform: uppercase;
   color: var(--basic-black);
   margin: 0;
+  margin-bottom: 7px;
   padding: 0;
   cursor: pointer;
 }
@@ -1267,7 +1269,7 @@
   text-align: start;
   margin: 0;
   padding: 0;
-  margin-bottom: 13px;
+  margin-bottom: 17px;
   font-weight: normal;
   line-height: 21px;
   text-transform: uppercase;
