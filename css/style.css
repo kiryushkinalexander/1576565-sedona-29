@@ -43,7 +43,6 @@
 
 .container {
   width: 1200px;
-  /* height: 100vh; */
   background-color: var(--basic-white);
   margin: 0 auto;
   box-shadow: 0 5px 15px var(--container-boxshadow);
@@ -81,6 +80,7 @@
 }
 
 .main-header-logo {
+  z-index: 1;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -119,8 +119,12 @@
   padding-left: 73px;
 }
 
-.site-nav li:last-child {
+.site-nav li:nth-child(4n) {
   padding-right: 73px;
+}
+
+.site-nav li:nth-child(5n) {
+  padding-left: 73px;
 }
 
 .site-nav-link:hover {
@@ -138,15 +142,15 @@
 /* MAIN */
 
 .banner {
+  position: relative;
   background-image: url(../img/header-img.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
   background-size: cover;
   background-color: var(--banner-background);
   text-align: center;
   padding-top: 77px;
-  padding-bottom: 80px;
-  height: 509px;
+  padding-bottom: 75px;
 }
 
 .banner::after {
@@ -154,7 +158,7 @@
   content: "";
   height: 57px;
   width: 1200px;
-  top: 509px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   background-image: url(../img/sedonapicture.svg);
@@ -162,7 +166,7 @@
 }
 
 .description {
-  padding-top: 41px;
+  padding-top: 40px;
   padding-bottom: 51px;
 }
 
@@ -183,7 +187,7 @@
 
 .features-item-inner {
   margin: 0;
-  padding: 47px 49px 51px 47px;
+  padding: 48px 49px 51px 47px;
 }
 
 
@@ -259,7 +263,7 @@
   line-height: 21px;
   color: var(--basic-black);
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 
 .features-item-black h3::before {
@@ -267,7 +271,7 @@
   content: "";
   width: 75px;
   height: 77px;
-  margin: 0 auto 31px;
+  margin: 0 auto 28px;
   background-repeat: no-repeat;
   background-position: center bottom;
 }
@@ -333,7 +337,7 @@
   background-color: var(--basic-white);
   text-align: center;
   margin: 0 auto;
-  padding-top: 56px;
+  padding-top: 58px;
 }
 
 .form h2 {
@@ -355,6 +359,7 @@
 }
 
 .search-form {
+  z-index: 1;
   display: block;
   box-sizing: border-box;
   text-align: left;
@@ -687,8 +692,8 @@
   justify-items: center;
   text-align: center;
   background-color: var(--footer-background);
-  padding-top: 25px;
-  padding-bottom: 36px;
+  padding-top: 20px;
+  padding-bottom: 26px;
   border-top: 1px solid var(--border-background);
 }
 
@@ -1300,8 +1305,8 @@
   width: 110px;
   background-color: var(--basic-lightgrey);
   text-align: center;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 7px;
+  padding-bottom: 1px;
 }
 
 .four-stars-rating::after {
@@ -1309,7 +1314,7 @@
   content: "";
   width: 90px;
   height: 17px;
-  margin: 0 auto 47px;
+  margin: 0 auto 42px;
   margin-right: 0;
   background-repeat: space repeat;
   background-position: center bottom;
@@ -1324,7 +1329,7 @@
   content: "";
   width: 66px;
   height: 17px;
-  margin: 0 auto 47px;
+  margin: 0 auto 44px;
   margin-right: 0;
   background-repeat: space repeat;
   background-position: center bottom;
@@ -1339,7 +1344,7 @@
   content: "";
   width: 38px;
   height: 17px;
-  margin: 0 auto 47px;
+  margin: 0 auto 42px;
   margin-right: 0;
   background-repeat: space repeat;
   background-position: center bottom;
