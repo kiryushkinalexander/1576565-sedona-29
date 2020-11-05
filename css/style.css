@@ -29,6 +29,10 @@
 
 /* Grid */
 
+*{
+  box-sizing: border-box;
+}
+
 .page {
   height: 100%;
 }
@@ -104,7 +108,7 @@
 
 .site-nav-item {
   margin: 0;
-  width: 19%;
+  width: 25%;
 }
 
 .site-nav-item-right {
@@ -115,8 +119,8 @@
   padding-left: 73px;
 }
 
-.site-nav li:nth-child(3n) {
-  padding-left: 144px;
+.site-nav li:last-child {
+  padding-right: 73px;
 }
 
 .site-nav-link:hover {
@@ -142,6 +146,7 @@
   text-align: center;
   padding-top: 77px;
   padding-bottom: 80px;
+  height: 509px;
 }
 
 .banner::after {
@@ -149,7 +154,7 @@
   content: "";
   height: 57px;
   width: 1200px;
-  top: 514px;
+  top: 509px;
   left: 50%;
   transform: translateX(-50%);
   background-image: url(../img/sedonapicture.svg);
@@ -157,7 +162,7 @@
 }
 
 .description {
-  padding-top: 37px;
+  padding-top: 41px;
   padding-bottom: 51px;
 }
 
@@ -178,7 +183,7 @@
 
 .features-item-inner {
   margin: 0;
-  padding: 49px 49px 51px 47px;
+  padding: 47px 49px 51px 47px;
 }
 
 
@@ -220,7 +225,7 @@
   background-color: var(--basic-white);
   list-style: none;
   margin: 0;
-  padding: 54px 0 81px;
+  padding: 55px 0 81px;
 }
 
 .features-item-white h3 {
@@ -262,7 +267,7 @@
   content: "";
   width: 75px;
   height: 77px;
-  margin: 0 auto 28px;
+  margin: 0 auto 31px;
   background-repeat: no-repeat;
   background-position: center bottom;
 }
@@ -306,7 +311,7 @@
 }
 
 .features-item-black-bottom h3 {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .features-item-black-bottom h3::before {
@@ -676,12 +681,13 @@
 /* FOOTER */
 
 .page-footer {
+  z-index: 1;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   text-align: center;
   background-color: var(--footer-background);
-  padding-top: 23px;
+  padding-top: 25px;
   padding-bottom: 36px;
   border-top: 1px solid var(--border-background);
 }
@@ -841,6 +847,10 @@
   color: var(--basic-white);
 }
 
+.hotels-price legend {
+  margin-bottom: 11px;
+}
+
 .filters {
   display: flex;
   flex-wrap: wrap;
@@ -934,10 +944,6 @@
   border: none;
 }
 
-.hotels-price legend {
-  margin-bottom: 11px;
-}
-
 .hotels-filter {
   background-image: url(../img/background.jpg);
   background-position: center;
@@ -962,8 +968,8 @@
 .range-controls {
   position: relative;
   height: 20px;
-  padding-top: 21px;
-  margin-bottom: 15px;
+  padding-top: 22px;
+  margin-bottom: 34px;
 }
 
 .range-controls .scale {
@@ -979,7 +985,7 @@
 
 .range-controls .toggle {
   position: absolute;
-  top: 10px;
+  top: 13px;
   width: 19px;
   height: 19px;
   padding: 0;
@@ -1036,7 +1042,7 @@
 
 .price-control-min {
   text-align: right;
-  margin-left: 37px;
+  margin-left: 34px;
 }
 
 .price-control-max {
@@ -1047,7 +1053,7 @@
 /* CHECKBOX  */
 
 .filters-item legend {
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 .hotels-form-list {
@@ -1063,7 +1069,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
-  padding-left: 40px;
+  padding-left: 41px;
 }
 
 .hotels-form-item:last-child {
@@ -1083,7 +1089,7 @@
 }
 
 .filters-item {
-  margin-right: 119px;
+  margin-right: 118px;
 }
 
 .filters-item:last-child {
@@ -1228,13 +1234,13 @@
   flex-wrap: wrap;
   border-top: 1px solid var(--border-background);
   margin: 0;
-  padding: 23px 73px 30px 73px;
+  padding: 25px 73px 30px 73px;
 }
 
 .search-result-item img {
   margin: 0;
   padding: 0;
-  padding-top: 7px;
+  margin-top: 4px;
   margin-right: 29px;
 }
 
@@ -1250,7 +1256,7 @@
   text-transform: uppercase;
   color: var(--basic-black);
   margin: 0;
-  margin-bottom: 7px;
+  margin-bottom: 5px;
   padding: 0;
   cursor: pointer;
 }
@@ -1269,9 +1275,9 @@
   text-align: start;
   margin: 0;
   padding: 0;
-  margin-bottom: 17px;
+  margin-bottom: 19px;
   font-weight: normal;
-  line-height: 21px;
+  line-height: 16px;
   text-transform: uppercase;
   color: var(--basic-lightdark);
 }
@@ -1368,7 +1374,7 @@
 .book {
   width: 142px;
   margin: 0;
-  padding: 4px 17px;
+  padding: 4px 16px;
   background: var(--special);
   line-height: 21px;
   text-transform: uppercase;
