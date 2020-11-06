@@ -588,24 +588,28 @@
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
+  opacity: 1;
 }
 
 .form-field input::-moz-placeholder {
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
+  opacity: 1;
 }
 
 .form-field input:-ms-input-placeholder {
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
+  opacity: 1;
 }
 
 .form-field input::-ms-input-placeholder {
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
+  opacity: 1;
 }
 
 .form-field input::placeholder {
@@ -677,26 +681,35 @@
 .form-field-row input::-webkit-input-placeholder {
   font-size: 14px;
   line-height: 26px;
+  color: var(--basic-black);
+  opacity: 1;
 }
 
 .form-field-row input::-moz-placeholder {
   font-size: 14px;
   line-height: 26px;
+  color: var(--basic-black);
+  opacity: 1;
 }
 
 .form-field-row input:-ms-input-placeholder {
   font-size: 14px;
   line-height: 26px;
+  color: var(--basic-black);
+  opacity: 1;
 }
 
 .form-field-row input::-ms-input-placeholder {
   font-size: 14px;
   line-height: 26px;
+  color: var(--basic-black);
+  opacity: 1;
 }
 
 .form-field-row input::placeholder {
   font-size: 14px;
   line-height: 26px;
+  color: var(--basic-black);
 }
 
 .form-field-row input:focus {
