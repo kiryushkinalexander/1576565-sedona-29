@@ -36,7 +36,8 @@
 
     <main class="main">
       <section class="hotels-filter">
-        <form class="hotels-form" action="">
+        <h2 class="visually-hidden">Форма поиска отеля</h2>
+        <form class="hotels-form" action="https://echo.htmlacademy.ru/">
           <div class="hotels-form-fieldset">
             <fieldset class="filters-item">
               <legend>инфраструктура:</legend>
@@ -110,6 +111,7 @@
       </section>
 
       <section class="result">
+        <h2 class="visually-hidden">Результат поиска</h2>
         <div class="filters">
           <div class="sorting">
             <span class="filters-result">найдено: 3</span>
@@ -129,14 +131,14 @@
           <div class="arrows">
             <ul class="arrows-list">
               <li class="arrows-item up-arrow">
-                <a href="#">
+                <a href="#" aria-label="Сортировка по возрастанию">
                   <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA" />
                   </svg>
                 </a>
               </li>
               <li class="arrows-item down-arrow active-arrow">
-                <a href="#">
+                <a href="#" aria-label="Сортировка по убыванию">
                   <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.5 10L0 0H11" fill="#CACACA" />
                   </svg>
@@ -210,7 +212,9 @@
       <div class="footer-contacts">
         <h2 class="visually-hidden">О нас</h2>
         <p class="footer-tag">#visitSEDONA</p>
-        <p class="footer-phone">ТЕЛ: <a href="">+7(495) 666-01-66</a></p>
+        <p class="footer-phone">тел: <a href="tel:+74956660166">
+            +7(495) 666-01-66
+          </a></p>
       </div>
 
       <ul class="social-list">

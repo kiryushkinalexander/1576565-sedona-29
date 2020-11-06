@@ -16,8 +16,8 @@ try {
 
 form.classList.add('hide-form');
 
-button.addEventListener('click', (event) => {
-  event.preventDefault();
+button.addEventListener('click', (evt) => {
+  evt.preventDefault();
   form.classList.toggle('show-form');
   form.classList.remove('form-error');
 });
@@ -36,12 +36,12 @@ form.addEventListener('submit', function (evt) {
 });
 
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
-    if (form.classList.contains("show-form")) {
+    if (form.classList.contains('show-form')) {
       evt.preventDefault();
-      form.classList.remove("show-form");
-      form.classList.remove("form-error");
+      form.classList.remove('show-form');
+      form.classList.remove('form-error');
     }
   }
 });

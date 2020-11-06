@@ -6,7 +6,7 @@
   <title>HTMLAcademy: Седона</title>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -23,10 +23,12 @@
       </nav>
     </header>
     <main class="main">
-      <h1 class="visually-hidden">Туристический портал города Седона</h1>
-      <section class="banner"> <img class="banner-img" src="img/welcome.svg" alt="Седона" width="457" height="351">
+      <section class="banner">
+        <h2 class="visually-hidden">Туристический портал города Седона</h2>
+        <img class="banner-img" src="img/welcome.svg" alt="Седона" width="457" height="351">
       </section>
       <section class="description">
+        <h2 class="visually-hidden">Описание города Седона</h2>
         <p class="description-about">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне,<br> заслуживающий большего!
         </p>
         <p class="description-reason">Рассмотрим 5 причин, по&nbsp;которым Седона круче, чем гранд каньон!</p>
@@ -87,7 +89,7 @@
           в&nbsp;седоне </p>
         <div class="toggle-form"> <button class="button button-primary" type="button">поиск гостиницы
             в&nbsp;седоне</button>
-          <form class="search-form method=" GET" action="https://echo.htmlacademy.ru/">
+          <form class="search-form" method="GET" action="https://echo.htmlacademy.ru/">
             <div class="form-field">
               <label for="start">дата заезда:</label>
               <input class="trip-start" type="text" id="start" name="trip-start" placeholder="24 апреля 2017">
@@ -157,7 +159,7 @@
       <div class="footer-contacts">
         <h2 class="visually-hidden">О&nbsp;нас</h2>
         <p class="footer-tag">#visitSEDONA</p>
-        <p class="footer-phone">ТЕЛ: <a href="tel: +74956660166">
+        <p class="footer-phone">тел: <a href="tel:+74956660166">
             +7(495) 666-01-66
           </a>
         </p>
